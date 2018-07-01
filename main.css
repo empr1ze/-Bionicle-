@@ -1,0 +1,136 @@
+
+body {
+	background-image: url("nightsky.jpg");
+	font-family: 'IM Fell English', serif;
+}	
+a {text-decoration:  none;}
+#headerTitle {
+	background-color: transparent;
+	color:white;
+	text-align: center;
+	padding: 15px;
+	font-size: 36px;
+}
+#footerTitle {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	font-size: 18px;
+}
+.leftFloat {
+	float: left;
+	width: 14.2%;
+	height: 500px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.wrapper div {
+	color: red;
+}
+.text-center {text-align: center;}
+.wrapper {
+	width:100%;
+	padding-left: 4px;
+}
+.text-box {
+	border: 1px solid gold;
+	height: 90%;
+	padding: 0 5px 0 5px;
+	margin-top: 5px;
+	background-size: cover;
+}
+
+#redTitle {color: red; background-color: transparent;}
+
+#Tahu {
+	background-image: url("tahu.png");
+}
+	#Tahu-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Tahu:hover {background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("tahu.png");}
+		#Tahu:hover #Tahu-Summary {
+			display: block;
+		}
+		
+#Kopaka {
+	background-image: url("kopaka.png");
+}
+	#Kopaka-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Kopaka:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("kopaka.png");}
+		#Kopaka:hover #Kopaka-Summary {
+			display: block;
+		}
+		
+#Gali {
+	background-image: url("gali.png");
+}
+	#Gali-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Gali:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("gali.png");}
+		#Gali:hover #Gali-Summary {
+			display: block;
+		}
+		
+#Pohatu {
+	background-image: url("pohatu.png");
+}
+	#Pohatu-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Pohatu:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("pohatu.png");}
+		#Pohatu:hover #Pohatu-Summary {
+			display: block;
+		}
+		
+#Lewa {
+	background-image: url("lewa.png");
+}
+	#Lewa-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Lewa:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("lewa.png");}
+		#Lewa:hover #Lewa-Summary {
+			display: block;
+		}
+		
+#Onua {
+	background-image: url("onua.png");
+}
+	#Onua-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Onua:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("onua.png");}
+		#Onua:hover #Onua-Summary {
+			display: block;
+		}
+		
+#Takanuva {
+	background-image: url("takanuva.png");
+}
+	#Takanuva-Summary {
+		display: none;
+		color: white;
+		font-family: 'BenchNine', sans-serif;
+	}
+	#Takanuva:hover{background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("takanuva.png");}
+		#Takanuva:hover #Takanuva-Summary {
+			display: block;
+		}
+		
