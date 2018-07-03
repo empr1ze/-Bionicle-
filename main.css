@@ -3,7 +3,8 @@ body {
 	background-image: url("nightsky.jpg");
 	font-family: 'IM Fell English', serif;
 }	
-a {text-decoration:  none;}
+a {color: yellow; font-weight: bold;}
+a:hover {color: dodgerblue;}
 #headerTitle {
 	background-color: transparent;
 	color:white;
@@ -41,6 +42,43 @@ a {text-decoration:  none;}
 	background-size: cover;
 }
 
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
 #redTitle {color: red; background-color: transparent;}
 
 #Tahu {
@@ -48,10 +86,11 @@ a {text-decoration:  none;}
 }
 	#Tahu-Summary {
 		display: none;
-		color: white;
+		color: orange;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Tahu:hover {background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("tahu.png");overflow: auto;}
+	#Tahu:hover {background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("tahu.png");overflow: auto;}
 		#Tahu:hover #Tahu-Summary {
 			display: block;
 		}
@@ -61,10 +100,11 @@ a {text-decoration:  none;}
 }
 	#Kopaka-Summary {
 		display: none;
-		color: white;
+		color: lightcyan;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Kopaka:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("kopaka.png");overflow: auto;}
+	#Kopaka:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("kopaka.png");overflow: auto;}
 		#Kopaka:hover #Kopaka-Summary {
 			display: block;
 		}
@@ -74,10 +114,11 @@ a {text-decoration:  none;}
 }
 	#Gali-Summary {
 		display: none;
-		color: white;
+		color: aquamarine;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Gali:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("gali.png");overflow: auto;}
+	#Gali:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("gali.png");overflow: auto;}
 		#Gali:hover #Gali-Summary {
 			display: block;
 		}
@@ -87,10 +128,11 @@ a {text-decoration:  none;}
 }
 	#Pohatu-Summary {
 		display: none;
-		color: white;
+		color: wheat;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Pohatu:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("pohatu.png");overflow: auto;}
+	#Pohatu:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("pohatu.png");overflow: auto;}
 		#Pohatu:hover #Pohatu-Summary {
 			display: block;
 		}
@@ -100,10 +142,11 @@ a {text-decoration:  none;}
 }
 	#Lewa-Summary {
 		display: none;
-		color: white;
+		color: lime;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Lewa:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("lewa.png");overflow: auto;}
+	#Lewa:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("lewa.png");overflow: auto;}
 		#Lewa:hover #Lewa-Summary {
 			display: block;
 		}
@@ -113,10 +156,11 @@ a {text-decoration:  none;}
 }
 	#Onua-Summary {
 		display: none;
-		color: white;
+		color: silver;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Onua:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("onua.png");overflow: auto;}
+	#Onua:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("onua.png");overflow: auto;}
 		#Onua:hover #Onua-Summary {
 			display: block;
 		}
@@ -126,11 +170,89 @@ a {text-decoration:  none;}
 }
 	#Takanuva-Summary {
 		display: none;
-		color: white;
+		color: gold;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 18px;
 	}
-	#Takanuva:hover{background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("takanuva.png");overflow: auto;}
+	#Takanuva:hover{background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("takanuva.png");overflow: auto;}
 		#Takanuva:hover #Takanuva-Summary {
 			display: block;
 		}
 		
+.btn {
+    /*background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.tahuBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.tahuBtn:hover {
+    background-color: orange;
+    color: black;
+}
+
+.kopakaBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.kopakaBtn:hover {
+    background-color: lightcyan;
+    color: dodgerblue;
+}
+
+.galiBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.galiBtn:hover {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.pohatuBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.pohatuBtn:hover {
+    background-color: wheat;
+    color: brown;
+}
+
+.lewaBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.lewaBtn:hover {
+    background-color: lime;
+    color: green;
+}
+
+.onuaBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.onuaBtn:hover {
+    background-color: silver;
+    color: black;
+}
+
+.takanuvaBtn {
+    background-color: transparent; 
+    color: white; 
+}
+.takanuvaBtn:hover {
+    background-color: gold;
+    color: black;
+}
