@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
 		<link href="https://fonts.googleapis.com/css?family=BenchNine|IM+Fell+English" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<!--link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"-->
+		<script src="jquery-3.3.1.js"></script>
+		<script src="scroll.js"></script>
 		<script src="modal.js"></script>
+
 		<title>BIONICLES - Welcome</title>
 	</head>
 	
 	<body>
 		<header>
 			<div id="headerTitle">WELCOME<br />TO THE WORLD OF<br /><span id="redTitle">BIONICLES</span></div>
-			<div style="text-align: center; 	color:white; width: 100%; border-top: 1px white solid;"><p>Go ahead - hover your mouse over each hero or click the name of each hero</p></div>
+			<div id="menu">
+				<a href="#heroes" id="heroscroll">HEROES</a>
+				<a href="#world" id="worldscroll">WORLD</a>
+				<a href="#movie" id="moviescroll">MOVIE</a>
+			</div>
+			<div style="text-align: center; 	color:white; "><p>Go ahead - hover your mouse over each hero or click the name of each hero</p></div>
 		</header>
 		
 		<main>
-			<div class="wrapper">
+			<div class="wrapper" id="heroes">
 			<!-- Tahu -->
 				<div class="leftFloat">
 					<!--button-->
@@ -136,14 +147,45 @@
 					
 				</div>
 			</div>
-</hr>
+			<div id="world" style="height:30px;"></div>
+			<div id="world-grid">
+				<div class="row">
+					<div class="column">
+						<img src="pic1.jpg" style="width:100%">
+						<img src="pic2.jpg" style="width:100%">
+						<img src="pic3.jpg" style="width:100%">
+						<img src="toa-pohatu.jpg" style="width:100%">
+					</div>
+
+					<div class="column">
+						<img src="pic4.jpg" style="width:100%">
+						<img src="toa-gali.jpg" style="width:100%">
+						<img src="toa-hahu.jpg" style="width:100%">
+						<img src="toa-lewa.jpg"style="width:100%">
+					</div>
+
+					<div class="column">
+						<img src="toa-kopaka.png" style="width:100%">
+						<img src="toas.jpg" style="width:100%">
+						<img src="toa-onua.jpg" style="width:100%">
+						<img src="pic5.png" style="width:100%">
+					</div>
+					<div class="column">
+						<img src="map.jpg" style="width:100%">
+						<img src="toas.jpg" style="width:100%">
+						<img src="toa-onua.jpg" style="width:100%">
+						<img src="pic6.jpg" style="width:100%">
+					</div>
+				</div>
+			</div>
+			<div id="movie" style="height:30px;"></div>
 			<div id="footerTitle">Bionicle: Mask of Light (MOVIE)<br>
 				<div class="youtube-embed"><iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/6zHEtRQHXLE?ecver=1&amp;iv_load_policy=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div>Recycle your <a  id="Kh9bSoqF" href="https://www.sellcompare.co.uk">mobile phone (UK)</a></div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2018-01-01",endDate:"2018-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
-			</div>
+			</div>		
 		</main>
 		
 		<footer>
-			
+			<div style="height: 200px;"></div>		
 		</footer>
 	</body>
 </html>
